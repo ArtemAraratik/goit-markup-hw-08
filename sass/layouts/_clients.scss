@@ -1,0 +1,48 @@
+/* Clients */
+.clients-conteiner {
+  
+    align-items: center;
+ }
+ .h2-clients {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+ }
+ .clients-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+   
+ }
+ .client-link {
+    width: 170px;
+    height: 92px;
+    color:  #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover  {
+      border: 1px solid #2196F3;
+      color: #2196F3;
+     }
+     &:focus{
+      border: 1px solid #2196F3;
+      color: #2196F3;
+   }
+ }
+ .clients-icon {
+    width: 106px;
+    height: 60px;
+    fill:currentColor;
+ }
+ .client-link
