@@ -220,7 +220,7 @@ position: relative;
 
  .hero {  
    background-image: 
-   linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),   url(../images/hw4/herobackground.jpg); 
+   linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hw4/herobackground.jpg); 
    background-color: var(--footer-background-color);
    max-width: 1600px;
    height: 600px;
@@ -788,7 +788,7 @@ position: relative;
    transform: translateY(0);
    opacity: 1;
 }
-/* modal window */
+/* modal windou */
 .backdrop {
    position: fixed;
    top: 0;

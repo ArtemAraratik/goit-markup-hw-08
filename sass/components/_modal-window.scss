@@ -14,14 +14,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 275px;
+    height: auto;
     padding: 40px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     scale: 1;
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 480px){
+      width: 420px;
+      margin: 15px;
+    }
+    @media screen and (min-width: 768px){
+      width: 450px;
+      height: 609px;
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px){
+      width: 528px;
+      height: 581px;
+      margin: 15px;
+    }
  }
  .backdrop.is-hidden .modal {
     scale: 0;
@@ -86,7 +100,7 @@
     transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .form-input {
-    width: 100%;
+    width: 215px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -107,9 +121,18 @@
     &:focus  + .input-icon {
     fill:  #2196F3;
     }
+    @media screen and (min-width: 480px){
+      width: 350px;      
+    }
+    @media screen and (min-width: 768px){
+      width: 380px;
    }
+   @media screen and (min-width: 1200px){
+      width: 450px;
+   }
+}
  .coments {
-    width: 100%;
+    width: 215px;
     height: 120px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -125,6 +148,15 @@
    }
     &:focus {
       outline-color: rgba(33, 150, 243, 1);
+   }
+   @media screen and (min-width: 480px){
+      width: 350px;      
+    }
+    @media screen and (min-width: 768px){
+      width: 380px;
+   }
+   @media screen and (min-width: 1200px){
+      width: 450px;
    }
  }
 

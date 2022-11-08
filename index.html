@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./css/styles.css"/> -->
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-<header>
+ <header> 
    <div class="container header-container">
      <a href="./index.html" class="logo-web">Web<span class="logo-studio">Studio</span></a>
-     <nav class="nav">
+     <div class="menu_768">
+        <nav class="nav">
        <ul class="nav-list list">
          <li class="nav-item"><a href="./index.html" class="nav-link current">Студия</a></li>
          <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
@@ -36,18 +37,54 @@
             <svg  class="icon smartphone">
             <use href="./images/hw4/svg/symbol-defs.svg#icon-smartphone"></use>
         </svg>+38 096 111 11 11</a>
-    </li>
-      </ul>
+        </li>
+      </ul> 
+     </div>
+      <button type="button" class="menu_button" js-open-menu>
+        <svg class="menubtn">
+            <use href="../goit-markup-hw-08/images/hw8/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
    </div>
-</header>
-<main>
-    <section class="hero">
+   <div class="mob-menu is-hidden" js-menu-container >   >
+    <button type="button" class="menu_close_btn" js-close-menu>
+        <svg class="menu_close_btn_icon">
+            <use href="./images/hw4/svg/X.svg#icon-close-black-18dp"></use>
+        </svg>
+    </button>
+    <nav class="mob-menu_nav">
+       <ul class="mob-menu_nav-list list">
+         <li class="mob-menu_nav-item"><a href="./index.html" class="mob-menu_nav-link mob_current">Студия</a></li>
+         <li class="mob-menu_nav-item"><a href="./portfolio.html" class="mob-menu_nav-link">Портфолио</a></li>
+         <li class="mob-menu_nav-item"><a href="" class="mob-menu_nav-link">Контакты</a></li>
+       </ul>
+     </nav>   
+     <ul class="mob-menu_header-contact-list list">
+               <li class="mob-menu_header-contact-items">
+          <a href="tel:+380961111111" class="mob-menu_header_tell">
+           +38 096 111 11 11</a>
+        </li>
+         <li class="mob-menu_header-contact-items">
+          <a href="mailto:info@devstudio.com" class="mob-menu_header_mail">
+                        info@devstudio.com</a>
+        </li>
+        <ul class="mob_soc_list list">
+            <li class="mob_soc_items">Instagram</li>
+            <li class="mob_soc_items">Twitter</li>
+            <li class="mob_soc_items">Facebook</li>
+            <li class="mob_soc_items">Linkedin</li>
+        </ul>
+   </div>
+   
+</header> 
+<main> 
+     <section class="hero">
        <div class="container hero-container">
          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="take-to-work-btn" data-modal-open>Заказать услугу</button>
        </div>
-    </section>
-        <section class="credo-block section">
+    </section> 
+    <section class="credo-block section">
         <div class="container">
             <h2 class="visually-hidden">Наше кредо</h2>
         <ul class="credo-list list">
@@ -94,7 +131,7 @@
         </ul>
         </div>
     </section>
-    <section hidden class="what-we-do-block section">
+    <section class="what-we-do-block section">
         <div class="container">
             <h2 class="title-h2">Чем мы занимаемся</h2>
            <ul class="what-we-do-list list">
@@ -112,10 +149,12 @@
             </li>
            </ul>       
         </div>
-    </section> -->
-    <section class="team-block section">
+    </section> 
+   <section class="team-block section">
         <div class="container">
-            <h2 class="title-h2">Наша команда</h2>
+            <div class="team-block-title">
+                <h2 class="team-title-h2">Наша команда</h2>
+            </div>
         <ul class="team-list list">
             <li class="team-items">
                 <img src="./images/hw1/Igor_Demjanenko.jpg" alt="Igor Demjanenko photo" width="270" height="260">
@@ -267,10 +306,12 @@
             </li>
         </ul>
         </div>
-    </section>
-    <section class="section">
+    </section> -->
+  <section class="section">
         <div class="container">
-            <h2 class="h2-clients">Постоянные клиенты</h2>
+            <div class="title-h2-clients">
+                <h2 class="h2-clients">Постоянные клиенты</h2>
+            </div>
             <ul class="clients-list">
                 <li class="clients-items"><a href="" class="client-link">
                     <svg class="clients-icon">
@@ -312,10 +353,10 @@
         </div>
     </section>
 </main>
-    
 <footer>
     <div class="container footer-conteiner">
-        <div class="address">
+        <div class="footer_block">
+            <div class="address">
             <a href="./index.html" class="logo-web-footer">Web<span class="logo-studio-footer">Studio</span></a> 
      <address class="addres-footer">
          <ul class="address-list list">
@@ -364,6 +405,7 @@
             </li>
         </ul>
       </div>
+        </div>
       <div class="submit-block">
         <label for="submit-email" class="submit-text">Подписаться на разссылку</label>  
         <form class="email-input">
@@ -373,7 +415,7 @@
             class="submit-email"
             placeholder="E-mail"
             required>  
-            <button type="submit"  class="submit-btn"><span class="submit-ntn-text">Подписаться</span>
+            <button type="submit"  class="submit-btn"><span class="submit-btn-text">Подписаться</span>
                 <svg class="submit-icom">
                     <use href="./images/hw6/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
@@ -382,7 +424,7 @@
        </div>    
       </div>
      </div>     
-</footer>
+</footer> 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -449,5 +491,6 @@
     </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

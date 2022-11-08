@@ -3,7 +3,11 @@
   
     align-items: center;
  }
- .h2-clients {
+ .title-h2-clients {
+   display: inline;
+   justify-content: center;
+ }
+ .h2-clients {   
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -13,16 +17,36 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 50px;
+     @media screen and (min-width: 320px) {
+    font-size: 20px;
+    line-height:1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
  }
+}
  .clients-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
     list-style: none;
-   
+
  }
- .client-link {
+ .clients-items {
+   @media screen and (min-width: 480px) {
+    width: calc((100% - 30px)/2);
+   }
+   @media screen and (min-width: 768px) {
+    width: calc((100% - 90px)/3);
+ }
+   @media screen and (min-width: 1200px) {
     width: 170px;
     height: 92px;
+ }
+ }
+ .client-link {
+    width: 95%;
+    height: auto;
     color:  #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -45,4 +69,4 @@
     height: 60px;
     fill:currentColor;
  }
- .client-link
+ 
